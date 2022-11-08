@@ -68,3 +68,14 @@ app.get("/book/:id", (req, res) => {
             throw err;
         });
 })
+
+app.delete("/book/:id", (req, res) => {
+    Book.findOneAndRemove({ _id: req.params.id })
+        .then(() => {
+            res.send("book deleted successfully")
+        })
+        .catch((err) => {
+            throw err
+        })
+})
+
