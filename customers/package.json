@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "customers.js",
 	"scripts": {
-		"start": "npx nodemon books.js"
+		"start": "npx nodemon customers.js"
 	},
 	"keywords": [],
 	"author": "",
