@@ -39,8 +39,6 @@ app.post("/book", (req, res) => {
     })
 
     res.send("A new book created successfully")
-
-    res.send("Testing our book route!");
 });
 
 app.get("/books", (req, res) => {
