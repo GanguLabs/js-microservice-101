@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const bodyParser = require("body-parser");
+app.use(bodyParser.json());
 
 const mongoose = require("mongoose");
 
@@ -14,3 +16,8 @@ app.listen(4545, () => {
 app.get("/", (req, res) => {
     res.send("This is our main endpoint");
 })
+
+app.post("/book", (req, res) => {
+    console.log(req.body)
+    res.send("Testing our book route!");
+});
