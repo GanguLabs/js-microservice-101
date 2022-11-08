@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb://127.0.0.1:27017/customerService", () => {
+mongoose.connect("mongodb://customersOwner:1234@127.0.0.1:27017/customerService", () => {
     console.log("Database is connected");
 });
 

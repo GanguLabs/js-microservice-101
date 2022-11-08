@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/microservice_test", () => {
+mongoose.connect("mongodb://booksOwner:1234@127.0.0.1:27017/microservice_test", () => {
     console.log("Database is connected");
 });
 
