@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
 app.use(bodyParser.json());
-mongoose.connect("mongodb://OrdersOwner:1234@127.0.0.1:27017/microservice_test", () => {
+mongoose.connect("mongodb+srv://rootAdmin:1234@main-cluster.nlwzwip.mongodb.net/test", () => {
     console.log("Orders Database is connected");
 });
 
